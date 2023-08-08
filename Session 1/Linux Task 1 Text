@@ -1,0 +1,35 @@
+Name: Jana Hani Mohamed Zaki El-Sheikh
+OSC Committee: UX & Design 
+Summer Training ’23 – The Art of Linux
+
+Step 1: First I started by displaying all my directories using the ‘ls’ command. Then I created a new directory called “Jana Hani”. I then deleted one of my old directories (named “Jana”) to minimize confusion and moved directories so my new location was in the new directory that I named after myself. 
+
+
+Step 2: Inside the new directory I created another directory and named it “Documents”. Inside “Documents” I created three new files using the “touch” command and named them “file1.txt” “file2.txt” and “file3.txt”. I then used the “ls” command to ensure that all three files were appropriately created and named. 
+
+
+Step 3: Moving back to my main directory and using the “touch” command and ‘.’ I create a hidden file and name it “.hidden_file”. I then use the “ls” command to display my hidden file which, of course, doesn’t show up on the terminal (since it is hidden). 
+
+
+Step 4: First I check to see if the nano editor is available on my Linux. Then I invoke the nano editor using the “nano” command + the name of the file I wish to edit. I type what I need to and save it using CTRL + O and CTRL + T (so I can choose the file to save it in). I then exit using CTRL + X. I then use the “cat” command to display the contents that I had written in the file. 
+
+
+Step 5: I return to the “Documents” directory using the command “cd” along with the name of the directory.
+
+
+Step 6: I create a directory with the name “-“ and, after numerous tries, go to it using the command “cd ./” which allows me to bypass its unique name. I then return  to the “Documents” directory.
+
+
+Step 7: Using the “cp -r” command, I copy the “Documents” directory into the “Jana Hani” directory. It automatically changes name to replicate the name of the original directory so when using the “ls” command we will find that the original directory contains both a “Documents” and a “Jana Hani” directory. 
+After confirming that the second “Jana Hani” is indeed the copied “Documents” directory (using the “ls” command to list its contents), I use the “mv” command to change the name of “Jana Hani” into “My Documents”.
+
+ 
+Step 8: Using the “ls -a” command I list all the files inside the “Jana Hani” directory and show the hidden file I created earlier. Using the “cat” command I display the contents of the file.
+
+
+Step 9: Moving the “file2.txt” and “file3.txt” files into the “Jana Hani” directory using the “mv” command and the “..” to move back one step. Using “ls” I list all the files and directories inside “Jana Hani” to confirm the move. 
+
+
+Step 10: Finally, I delete the “Jana Hani” directory and its contents. 
+[Note: the text files you see in the image below “file2.txt” and “file3.txt” are duplicate files from another task and are not related to this particular task. I deleted them before repeating the “ls” command to avoid the confusion.]
+
