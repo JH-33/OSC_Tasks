@@ -1,0 +1,25 @@
+Linux Summer Training '23 - Task 2 
+
+Name: Jana Hani Mohamed Zaki El-Sheikh 
+
+OSC UX&Design Member
+
+---
+
+Step 1: First I downloaded the required file "Updated-Task-02.zip" via logging into my Github account from Mozilla Firefox. I then used the "cd" command to travel to my downloads folder, where the task file was saved, and then used the "Unzip" command to decompress the zip folder. 
+
+Step 2: I used the "ls" command to list the contents of the working directory "Downloads" and view the newly decompressed folder (now named "Updated-Task-02"). I use the "cd" command to travel to that directory before listing its contents. 
+
+Step 3: Initially, all I could see was the "README.txt" file, which I was able to read using the nano text editor, before realizing that the other file (".level-1.tar") was hidden. I used the "ls -a" command to view all the contents of the directory to see the hidden file. I attempt to use the "tar -x" command multiple times to decompress the archive before realizing that I need to unhide the file. I then used the "mv" command to rename the hidden file so I may view it. 
+
+Step 4: After executing that command I use "ls -a" once more to confirm that the file has indeed been unhidden. I then use the command "tar -xf" (among other commands of similar orientations) to decompress the .tar archive file. Finally, I move on to using the command "ls -a" after the initial "ls" command did not show whether or not the .tar file was decompressed. Indeed, the files contained within the .tar folder were hidden. 
+
+Step 5: I then quickly use the "mv" command to unhide the file (initially named ".level-1" now named "level-1") and then the "cd" command to move to it and view its contents using a quick "ls" command.
+
+Step 6: There are 2 files that are immediately visible, one file called "README.txt" and another called "level-2". Using the nano text editor I view the contents of the "README.txt" file. I then use the nano text editor on the "level-2" file. The file is distorted and hard to read but the words "level-2.tar" register clearly in the first line. 
+
+Step 7: I use the "tar -xf" command on the "level-2" file and extract its contents. I then use the "ls -a" commands to reveal the newly extracted file and then the "cd" command to move into it so that I may access its contents. 
+
+Step 8: Using the "ls" command I view the contents of the "level-2" directory. It's all oddly named files that, when you attempt to enter one and view its contents, are empty. No more files can be viewed.
+
+
