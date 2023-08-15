@@ -20,6 +20,10 @@ Step 6: There are 2 files that are immediately visible, one file called "README.
 
 Step 7: I use the "tar -xf" command on the "level-2" file and extract its contents. I then use the "ls -a" commands to reveal the newly extracted file and then the "cd" command to move into it so that I may access its contents. 
 
-Step 8: Using the "ls" command I view the contents of the "level-2" directory. It's all oddly named files that, when you attempt to enter one and view its contents, are empty. No more files can be viewed.
+Step 8: Using the "ls" command I view the contents of the "level-2" directory. 
 
+Step 9: Using the "find -name" command I search for the "level-3" file. Moving to the directory in question, I use "ls -a" (just in case the file is hidden) to view its content and, indeed, I see the file named level-3. I use the "tar -xf" command to extract its contents before moving to it. I then list its contents using "ls -a".
 
+Step 10: I locate the README.txt file using the "find -name" command and then use the "cat" command to view its contents. Once I read through the content of the file I look through the directories and files stored inside the level-3 directory and find an oddly colored file. Using the "cat" command to read through its contents I find the size of the file I am now looking for (73 bytes). 
+
+Step 11: Using the "find -size" command I insert the size of the file (along with the appropriate suffix for "byte") and find its location. Moving to that directory I find that it is made up entirely of files. Using the "cat" command to view the contents of the file named in the "find" command's results and finally get the message that all files have been found. 
