@@ -1,0 +1,28 @@
+
+STEP 1: First, I used the “sudo useradd -m” command to create a new user called “OSC” (using the -m option to create a directory for said user). I then used the “sudo passwd” command to create a password for the new user. I then used the “sudo addgroup” command to create a new group and then added my new user to it using the “sudo usermod -aG” command. 
+Then, to give my new user sudo privileges, I used the “sudo visudo” command to access the sudoers file and edit the name of my user (“OSC”) along with the privilege specification “ALL=(ALL:ALL) ALL” to give my user full sudo privileges. 
+Using the “su -” command, I finally switch to my new user (shown in step 2 screenshot).
+
+
+STEP 2: Using the ls and ls-a commands I list all the available directories within the new user’s home directory. Then using the “mkdir” I create a new directory named “permission_practice”. I move to the new directory using the “cd” command and then use the “touch” command to create three new files each, respectively, named: “private_file.txt” “public_file.txt” and “executable_script.sh”.
+Then, using the “chmod” command I begin to modify the permissions for each file. 
+Commands used:
+“chmod a-rw public_file.txt” (a stands for “all” and “a-rw” means “reading and writing permission for everyone”)
+“chmod u-rw private_file.txt” (u stands for “user/owner” and “u-rw” means “reading and writing permission for the owner”)
+“chmod u-rwx executable_script.sh” & “chmod g-rx executable_script” (g stands for “group” and “u-rwx” means “reading, writing, and executing permission for user/owner” while “g-rx” means “reading and executing permission for group”)
+
+
+
+STEP 3: To change the owner of a file, I used the “chown” command, however, it did not execute on its own. To use this command I had to use the “sudo” command alongside it. Thus, the final command was “sudo chown osc private_file.txt” to change the owner of the private file to the root owner, in this case named osc (all in lower case). A similar command was used to change the group of the file (“sudo chhrp osc_group private_file.txt). 
+
+
+
+STEP 4: First, I started the background process using the “&” at the end of the “sleep 1000” command. Then, using the “ps” command, I got its PID. Then I used the “kill” command alongside the PID (5071) to terminate the background process. 
+To download vim first I used the “sudo apt update” to update the package cache and then I used the “sudo apt install vim” command to commence the installation of vim. 
+Using “vim” to open the editor I immediately suspend it using “ctrl+z” and then use the the “killall” signal (modified to “killall -s KILL vim” for it to send the SIGKILL signal instead of the SIGTERM) to kill the process. This took several tries. 
+
+
+
+
+STEP 5: I use the “sudo apt install neofetch” command to install the package directly from the terminal . 
+I then use the “sudo apt remove neofetch” command to uninstall it.
