@@ -67,7 +67,7 @@ Script #4 - calculator.sh
 
 echo "1. Addition"
 echo "2. Subtraction"
-echo "3. Multipliication"
+echo "3. Multiplication"
 echo "4. Division"
 echo "5. Exit"
 
