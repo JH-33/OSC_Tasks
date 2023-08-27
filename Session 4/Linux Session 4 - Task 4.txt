@@ -1,0 +1,116 @@
+Script #1 - system_info.sh 
+
+echo "Username: " 
+whoami 
+echo "Kernel Version: "
+uname -r 
+
+
+
+
+Script #2 - file_check.sh 
+
+#!/bin/bash 
+
+if [ $# -ne 2 ]; then 
+  echo "Usage: $0 <filename> <directory>"
+  exit 1 
+fi
+
+
+filename="$1"
+directory="$2"
+filepath="$directory/$filename"
+
+
+if [ -f "$filepath" ]; then
+  echo "File exists."
+  echo "Contents: "
+  cat "$filepath"
+
+else 
+
+  echo "File does not exist."
+
+fi 
+
+
+
+Script #3 - rename_files.sh
+
+
+#!/bin/bash 
+
+if [ $#  -ne 2 ]; then 
+  echo "Shell usage: $0 <extension> <new_name>"
+  exit 1 
+fi 
+
+extension="$1"
+newname="$2"
+
+counter=1 
+
+for file in *."$extension"; do 
+  new_filename="$new_name$counter.$extension"
+
+  mv "$file" "$new_filename" 
+
+  ((counter++))
+done
+
+
+
+Script #4 - calculator.sh 
+
+#!/bin/bash 
+
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multipliication"
+echo "4. Division"
+echo "5. Exit"
+
+read -p "Choose your operation (1/2/3/4/5): " choice 
+
+read -p "Enter the first number: " A
+read -p "Enter the second number: " B 
+
+case $choice in
+
+  1)
+      result=$(($A + $B))
+      operation="Addition"
+      ;; 
+
+  2) 
+      result=$(($A - $B))
+      operation="Subtraction"
+      ;;
+  
+  3) 
+     
+     result=$(($A * $B))
+     operation="Multiplication"
+     ;; 
+
+  4) 
+      
+     if [ "$B" -eq 0 ]; then
+        echo "Divison by 0 is not allowed."
+        exit 1
+     fi    
+
+     result=$(($A / $B))
+     operation="Division"
+     ;;
+
+5) 
+
+  echo "So sad to see you go. Take care."
+  exit 1
+  ;;
+
+esac 
+
+echo "$operation result: $result"
