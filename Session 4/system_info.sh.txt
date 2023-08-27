@@ -1,0 +1,6 @@
+Script #1 - system_info.sh 
+
+echo "Username: " 
+whoami 
+echo "Kernel Version: "
+uname -r 
